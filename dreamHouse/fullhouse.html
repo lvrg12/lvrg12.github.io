@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--#include virtual="/footer.html" -->
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+    </head>
+    
+    <body>
+        <a-scene>
+
+            <a-assets>
+                <img id="sky1" src="images/skybox2.png"/>
+                <img id="grass" src="images/grass1.jpg"/>
+                <img id="blacktile" src="images/blacktile.jpg"/>
+                <img id="outdoortile" src="images/outdoortile.jpg"/>
+                <img id="whitestucco" src="images/whitestucco.jpg"/>
+                <img id="whitetile" src="images/whitetile1.jpg"/>
+                <img id="concretetile" src="images/concretetile.jpg"/>
+            </a-assets>
+
+            <!-- outside -->
+
+                <!-- sky -->
+                <a-sky src="#sky1"></a-sky>
+
+                <!-- grass -->
+                <a-plane
+                    width="150"
+                    height="150"
+                    position="0 0 0"
+                    rotation="-90 0 0"
+                    repeat="50 50"
+                    src="#grass">
+                </a-plane>
+
+                <!-- outter foundation -->
+                <a-box
+                    width="135"
+                    height="1"
+                    depth="50"
+                    repeat="80 1"
+                    src="#blacktile">
+                </a-box>
+
+                <!-- outsidetile -->
+                <a-plane
+                    width="135"
+                    height="50"
+                    position="0 0.51 0"
+                    rotation="-90 0 0"
+                    repeat="90 45"
+                    src="#outdoortile">
+                </a-plane>
+
+                <!-- columns -->
+
+                    <!-- column0 -->
+                    <a-box
+                        width="1"
+                        height="13"
+                        depth="1"
+                        position="66.5 1 24"
+                        repeat="1 1"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!-- column1 -->
+                    <a-box
+                        width="1"
+                        height="13"
+                        depth="1"
+                        position="47.34 1 24"
+                        repeat="1 1"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!-- column2 -->
+                    <a-box
+                        width="1"
+                        height="13"
+                        depth="1"
+                        position="28.18 1 24"
+                        repeat="1 1"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!-- column3 -->
+                    <a-box
+                        width="1"
+                        height="13"
+                        depth="1"
+                        position="9.02 1 24"
+                        repeat="1 1"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!-- column4 -->
+                    <a-box
+                        width="1"
+                        height="13"
+                        depth="1"
+                        position="-8.98 1 24"
+                        repeat="1 1"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!-- column5 -->
+                    <a-box
+                        width="1"
+                        height="13"
+                        depth="1"
+                        position="-36.48 1 24"
+                        repeat="1 1"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!-- column6 -->
+                    <a-box
+                        width="1"
+                        height="13"
+                        depth="1"
+                        position="-66.5 1 24"
+                        repeat="1 1"
+                        src="#whitestucco">
+                    </a-box>
+
+            <!-- inside -->
+
+                <!-- inner foundation -->
+                <a-box
+                    width="83.82"
+                    height="0.5"
+                    depth="25"
+                    position="5.5 0.5 0"
+                    repeat="20 10"
+                    src="#concretetile">
+                </a-box>
+
+                <!-- living room foundation -->
+                <a-box
+                    width="37.16"
+                    height="1"
+                    depth="20.5"
+                    position="9.6 1 -2.25"
+                    repeat="20 10"
+                    src="#concretetile">
+                </a-box>
+
+                <!--inner walls -->
+
+                    <!--left wall -->
+                    <a-box
+                        width="0.5"
+                        height="13"
+                        depth="20.5"
+                        position="-8.98 1.5 -2.25"
+                        repeat="100 100"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!--right wall -->
+                    <a-box
+                        width="0.5"
+                        height="4"
+                        depth="20.5"
+                        position="28.18 1.5 -2.25"
+                        repeat="100 100"
+                        src="#whitestucco">
+                    </a-box>
+
+                <!-- outer walls -->
+
+                    <!-- wall1 -->
+                    <a-box
+                        width="0.5"
+                        height="13"
+                        depth="25"
+                        position="47.34 1.5 0"
+                        repeat="100 100"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!-- wall2 -->
+                    <a-box
+                        width="83.82"
+                        height="13"
+                        depth="0.5"
+                        position="5.5 1.5 -12.5"
+                        repeat="100 100"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!-- wall3 -->
+                    <a-box
+                        width="0.5"
+                        height="13"
+                        depth="25"
+                        position="-36.48 1.5 0"
+                        repeat="100 100"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!-- wall4 -->
+                    <a-box
+                        width="83.82"
+                        height="13"
+                        depth="0.5"
+                        position="5.5 1.5 12.5"
+                        repeat="100 100"
+                        src="#whitestucco">
+                    </a-box>
+            
+            
+            
+                
+                <!-- example
+                    <a-box color="#0000FF"
+                        width="1"
+                        height="1"
+                        depth="1"
+                        position="-5 1 -3"
+                        rotation="0 0 0"
+                        scale="1 1 1">
+
+                        <a-animation attribute="rotation"
+                                        repeat="indefinite"
+                                        to="360 360 360"
+                                        begin="click">
+                        </a-animation>
+
+                        <a-event name="mouseenter" scale="5 5 5"></a-event>
+                    </a-box>
+                    -->
+
+
+        
+        <a-camera position="0 20 10">
+            <a-cursor color="red"/>
+        </a-camera>
+
+        </a-scene>
+
+        <script>
+            w3.includeHTML();
+        </script>
+
+    </body>    
+</html>

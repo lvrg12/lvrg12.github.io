@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--#include virtual="/footer.html" -->
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+    </head>
+    
+    <body>
+        <a-scene>
+
+            <a-assets>
+                <img id="sky1" src="images/skybox2.png"/>
+                <img id="grass" src="images/grass1.jpg"/>
+                <img id="blacktile" src="images/blacktile.jpg"/>
+                <img id="outdoortile" src="images/outdoortile.jpg"/>
+                <img id="whitestucco" src="images/whitestucco.jpg"/>
+                <img id="whitetile" src="images/whitetile1.jpg"/>
+                <img id="concretetile" src="images/concretetile.jpg"/>
+
+                <a-asset-item id="stool1" src="models/swivel-bar-stool.obj"/>
+                <a-asset-item id="stoolm" src="models/swivel-bar-stool.mtl"/>
+
+                <a-asset-item id="stool2" src="models/stool2.dae"/>
+            </a-assets>
+
+            <!-- outside -->
+
+            <!-- inside -->
+
+                <!-- inner foundation -->
+                <a-box
+                    width="40"
+                    height="0.5"
+                    depth="20"
+                    position="0 0 0"
+                    repeat="10 5"
+                    src="#concretetile">
+                </a-box>
+
+                <!-- outer walls -->
+
+                    <!-- right wall -->
+                    <a-box
+                        width="0.5"
+                        height="15"
+                        depth="20"
+                        position="20 0 0"
+                        repeat="10 10"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!-- left wall -->
+                    <a-box
+                        width="0.5"
+                        height="15"
+                        depth="20"
+                        position="-20 0 0"
+                        repeat="10 10"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!-- back wall -->
+                    <a-box
+                        width="40"
+                        height="15"
+                        depth="0.5"
+                        position="0 0 -10"
+                        repeat="10 10"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!-- front wall -->
+                    <a-box
+                        width="40"
+                        height="15"
+                        depth="0.5"
+                        position="0 0 10"
+                        repeat="10 10"
+                        src="#whitestucco">
+                    </a-box>
+
+                <!-- living room foundation -->
+                <a-box
+                    width="20"
+                    height="0.5"
+                    depth="15"
+                    position="0 0.5 -2.5"
+                    repeat="5 5"
+                    src="#concretetile">
+                </a-box>
+
+                <!--inner walls and columns -->
+
+                    <!--left wall -->
+                    <a-box
+                        width="0.5"
+                        height="15"
+                        depth="15"
+                        position="-10 0 -2.5"
+                        repeat="10 10"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!--right wall -->
+                    <a-box
+                        width="0.5"
+                        height="6"
+                        depth="15"
+                        position="10 0 -2.5"
+                        repeat="10 10"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!--left column -->
+                    <a-box
+                        width="0.5"
+                        height="15"
+                        depth="0.5"
+                        position="2.5 0 5"
+                        repeat="10 10"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!--right column -->
+                    <a-box
+                        width="0.5"
+                        height="15"
+                        depth="0.5"
+                        position="-2.5 0 5"
+                        repeat="10 10"
+                        src="#whitestucco">
+                    </a-box>
+
+
+                <!-- counters -->
+
+                    <!--uppercounter -->
+                    <a-box
+                        width="1"
+                        height="0.25"
+                        depth="15"
+                        position="9.75 3 -2.5"
+                        repeat="1 10"
+                        src="#blacktile">
+                    </a-box>
+
+                    <!--right wall -->
+                    <a-box
+                        width="1"
+                        height="0.25"
+                        depth="15"
+                        position="10.75 2.5 -2.5"
+                        repeat="1 10"
+                        src="#blacktile">
+                    </a-box>
+
+                <!-- objects -->
+                
+                <!-- stools -->
+                    <a-obj-model
+                        src="#stool1"
+                        mtl="#stoolm"
+                        scale="4 4 4"
+                        position="9 0.75 -8">
+                    </a-obj-model>
+
+                    <a-obj-model
+                        src="#stool1"
+                        mtl="#stoolm"
+                        scale="4 4 4"
+                        position="9 0.75 -6">
+                    </a-obj-model>
+
+                    <a-obj-model
+                        src="#stool1"
+                        mtl="#stoolm"
+                        scale="4 4 4"
+                        position="9 0.75 -4">
+                    </a-obj-model>
+
+                    <a-obj-model
+                        src="#stool1"
+                        mtl="#stoolm"
+                        scale="4 4 4"
+                        position="9 0.75 -2">
+                    </a-obj-model>
+
+                    <a-obj-model
+                        src="#stool1"
+                        mtl="#stoolm"
+                        scale="4 4 4"
+                        position="9 0.75 0">
+                    </a-obj-model>
+
+                    <a-obj-model
+                        src="#stool1"
+                        mtl="#stoolm"
+                        scale="4 4 4"
+                        position="9 0.75 2">
+                    </a-obj-model>
+
+                    <a-obj-model
+                        src="#stool1"
+                        mtl="#stoolm"
+                        scale="4 4 4"
+                        position="9 0.75 4">
+                    </a-obj-model>
+
+        
+        <a-camera position="0 1 0">
+            <a-cursor color="red"/>
+        </a-camera>
+
+        </a-scene>
+
+    </body>    
+</html>

@@ -1,0 +1,45 @@
+Lino Virgen
+CS 5331
+
+FOVE Eye Tracking Virtual Reality Headset Report
+
+The FOVE headset is the first eye tracking virtual reality headset in the market.
+It works by utlizing four infrared cameras which track the user's pupils and register
+their movement. The device reads expressions, glances, and blinks to communicate
+between the user and the virtual world.
+
+FOVE is a startup company which started in Tokyo. The headset was announce in 2014.
+In order to fund the project, a kickstarter campaing was started with an initial goal
+of $250,000; this goal was reached after 3 days. Overall the campaign reaised a total
+of $480,000. The company Samsung also contributed financially to the project.
+
+This headset provides foveated rendering. This technique renders the image depending on
+where the user is looking at. This means that the detailed rendering will be observed only
+where the user is looking at and the rest of the image will have lower rendering. By utilizing
+this technique the performance of the system is improved. It also allows for a more natural,
+intuitive, and nearly subconscious user interface.
+
+The headset is compatible with many SteamVR and OSVR titles and it supports Unity, Unreal, and
+Xenko for VR developing. The headset has also been used to help physically disabled people, as
+it is capable of simulating a mouse and keyboard.
+
+Some weaknesses of this headset could be reading blinks for input. If the user does not have
+complete control over his/her blinking the headset might read wrong inputs. FOVE is also a bit
+expensive, being $599. It does not support hand controllers like other VR headsets in the market.
+The game title that it supports are not many.
+
+FOVE states that "by enabling fine control with the eye, FOVE significally reduces simulation
+sickness through the elimination of unnecessary movement." Personally, I experience a high
+level of motion sickness while using a standard VR headset so getting used to this device
+might be difficult. Thus, my motion sickness rating is 6/10.
+
+After FOVE was released Facebook, Apple and Google acquired eye tracking startups. Tobii had been
+researching this technology for several years and now they are planning to release an eye tracking
+modification for the HTC Vice. Pupil Labs offers VR and AR eye tracking headsets. The Chinese
+company 7invensum came up with aGlass, an eye tracking adapter for the VIVE.
+
+Other potential uses of FOVE are in health care, movies, education, social communication, and
+further development.
+
+To conclude, FOVE introduces a new type of headset that tracks the eye movement of the user to
+communicate with the virtual environment while optimizing image rendering.
