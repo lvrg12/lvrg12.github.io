@@ -17,11 +17,20 @@
                 <img id="whitestucco" src="images/whitestucco.jpg"/>
                 <img id="whitetile" src="images/whitetile1.jpg"/>
                 <img id="concretetile" src="images/concretetile.jpg"/>
+                <img id="maroonwall" src="images/maroonwall.jpg"/>
 
                 <a-asset-item id="stool1" src="models/swivel-bar-stool.obj"/>
                 <a-asset-item id="stoolm" src="models/swivel-bar-stool.mtl"/>
 
-                <a-asset-item id="stool2" src="models/stool2.dae"/>
+                <a-asset-item id="tv" src="models/flat-screen-lcd-tv.obj"/>
+                <a-asset-item id="tvm" src="models/flat-screen-lcd-tv.mtl"/>
+
+                <a-asset-item id="sofa" src="models/Realistic sofa only.obj"/>
+                <a-asset-item id="sofam" src="images/blackleather.jpg"/>
+
+                <a-asset-item id="kitchen" src="models/kitchen-obj/kitchen.obj"/>
+                <a-asset-item id="kitchenm" src="models/kitchen-obj/kitchen.mtl"/>
+
             </a-assets>
 
             <!-- outside -->
@@ -29,14 +38,14 @@
             <!-- inside -->
 
                 <!-- inner foundation -->
-                <a-box
-                    width="40"
-                    height="0.5"
-                    depth="20"
-                    position="0 0 0"
-                    repeat="10 5"
-                    src="#concretetile">
-                </a-box>
+                    <a-box
+                        width="40"
+                        height="0.5"
+                        depth="20"
+                        position="0 0 0"
+                        repeat="10 5"
+                        src="#concretetile">
+                    </a-box>
 
                 <!-- outer walls -->
 
@@ -67,7 +76,7 @@
                         depth="0.5"
                         position="0 0 -10"
                         repeat="10 10"
-                        src="#whitestucco">
+                        src="#maroonwall">
                     </a-box>
 
                     <!-- front wall -->
@@ -81,14 +90,14 @@
                     </a-box>
 
                 <!-- living room foundation -->
-                <a-box
-                    width="20"
-                    height="0.5"
-                    depth="15"
-                    position="0 0.5 -2.5"
-                    repeat="5 5"
-                    src="#concretetile">
-                </a-box>
+                    <a-box
+                        width="20"
+                        height="0.5"
+                        depth="15"
+                        position="0 0.5 -2.5"
+                        repeat="5 5"
+                        src="#concretetile">
+                    </a-box>
 
                 <!--inner walls and columns -->
 
@@ -207,8 +216,88 @@
                         position="9 0.75 4">
                     </a-obj-model>
 
+                    <a-obj-model
+                        src="#stool1"
+                        mtl="#stoolm"
+                        scale="4 4 4"
+                        position="11.5 0.5 -8">
+                    </a-obj-model>
+
+                    <a-obj-model
+                        src="#stool1"
+                        mtl="#stoolm"
+                        scale="4 4 4"
+                        position="11.5 0.5 -6">
+                    </a-obj-model>
+
+                    <a-obj-model
+                        src="#stool1"
+                        mtl="#stoolm"
+                        scale="4 4 4"
+                        position="11.5 0.5 -4">
+                    </a-obj-model>
+
+                    <a-obj-model
+                        src="#stool1"
+                        mtl="#stoolm"
+                        scale="4 4 4"
+                        position="11.5 0.5 -2">
+                    </a-obj-model>
+
+                    <a-obj-model
+                        src="#stool1"
+                        mtl="#stoolm"
+                        scale="4 4 4"
+                        position="11.5 0.5 0">
+                    </a-obj-model>
+
+                    <a-obj-model
+                        src="#stool1"
+                        mtl="#stoolm"
+                        scale="4 4 4"
+                        position="11.5 0.5 2">
+                    </a-obj-model>
+
+                    <a-obj-model
+                        src="#stool1"
+                        mtl="#stoolm"
+                        scale="4 4 4"
+                        position="11.5 0.5 4">
+                    </a-obj-model>
+
+                <!-- tv -->
+
+                    <a-obj-model
+                        src="#tv"
+                        mtl="#tvm"
+                        scale="1 1 1"
+                        position="0 2 -9.25">
+                    </a-obj-model>
+
+                <!-- sofa -->
+
+                    <a-obj-model
+                        src="#sofa"
+                        mtl="#sofam"
+                        scale="0.004 0.004 0.004"
+                        position="0 0.75 0"
+                        rotation="0 270 0">
+                    </a-obj-model>
+
+                <!-- kitchen -->
+
+                    <a-obj-model
+                        src="#kitchen"
+                        mtl="#kitchen"
+                        scale="0.25 0.25 0.25"
+                        metalness="0.5"
+                        position="17 0.5 -8">
+                    </a-obj-model>
+
+
+
         
-        <a-camera position="0 1 0">
+        <a-camera position="0 5 0">
             <a-cursor color="red"/>
         </a-camera>
 
