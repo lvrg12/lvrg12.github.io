@@ -19,6 +19,7 @@
                 <img id="concretetile" src="images/concretetile.jpg"/>
                 <img id="maroonwall" src="images/maroonwall.jpg"/>
                 <img id="metal" src="images/metal.jpg"/>
+                <img id="carpet" src="images/carpet.jpg"/>
 
                 <a-asset-item id="stool1" src="models/swivel-bar-stool.obj"/>
                 <a-asset-item id="stoolm" src="models/swivel-bar-stool.mtl"/>
@@ -26,16 +27,21 @@
                 <a-asset-item id="tv" src="models/flat-screen-lcd-tv.obj"/>
                 <a-asset-item id="tvm" src="models/flat-screen-lcd-tv.mtl"/>
 
+                <a-asset-item id="stand" src="models/stand/Modern Table.obj"/>
+                <a-asset-item id="standm" src="models/stand/Modern Table.mtl"/>
+
                 <a-asset-item id="sofa" src="models/sofa/modern-convertible-sofa-with-pullout-bed.obj"/>
                 <a-asset-item id="sofam" src="models/sofa/modern-convertible-sofa-with-pullout-bed.mtl"/>
+
+                <a-asset-item id="coftable" src="models/coftable/StylishDesk.obj"/>
+                <a-asset-item id="coftablem" src="models/coftable/StylishDesk.mtl"/>
 
                 <a-asset-item id="kitchen" src="models/kitchen/kitchen.obj"/>
                 <a-asset-item id="kitchenm" src="models/kitchen/kitchen.mtl"/>
                 
                 <a-asset-item id="fridge" src="models/fridge/3d-model.obj"/>
-                <a-asset-item id="fridgem2" src="models/fridge/3d-model.mtl"/>
-
-
+                <a-asset-item id="fridgem" src="models/fridge/3d-model.mtl"/>
+                
                 <a-asset-item id="dintable" src="models/dintable/tableAndChair.obj"/>
                 <a-asset-item id="dintablem" src="models/dintable/tableAndChair.mtl"/>
 
@@ -194,7 +200,7 @@
                     <!--back isle -->
                         <a-box
                             width="1"
-                            height="3.5"
+                            height="3.75"
                             depth="2"
                             position="14.5 0.5 -4"
                             repeat="1 1"
@@ -213,7 +219,7 @@
                     <!-- front isle -->
                         <a-box
                             width="1"
-                            height="3.5"
+                            height="3.75"
                             depth="2"
                             position="14.5 0.5 1"
                             repeat="1 3"
@@ -339,6 +345,14 @@
                             position="0 2 -9.25">
                         </a-obj-model>
 
+                        <a-obj-model
+                            src="#stand"
+                            mtl="#standm"
+                            scale="0.25 0.5 0.5"
+                            rotation="0 90 0"
+                            position="0 0 -9">
+                        </a-obj-model>
+
                     <!-- sofas -->
 
                         <a-obj-model
@@ -365,21 +379,48 @@
                             rotation="0 90 0">
                         </a-obj-model>
 
-                    <!-- kitchens -->
+                    <!-- coffee tables -->
+
+                        <a-obj-model
+                            src="#coftable"
+                            mtl="#coftablem"
+                            scale="1.25 1 1.25"
+                            position="0 0 -2">
+                        </a-obj-model>
+
+                        <a-obj-model
+                            src="#coftable"
+                            mtl="#coftablem"
+                            scale="1.5 1.5 0.25"
+                            position="0 0 4.5">
+                        </a-obj-model>
+
+
+                    <!-- carpet -->
+                        <a-plane
+                            width="5"
+                            height="5"
+                            position="0 0.76 -2"
+                            rotation="-90 0 0"
+                            src="#carpet">
+                        </a-plane>
+
+                    <!-- kitchen -->
 
                         <a-obj-model
                             src="#kitchen"
                             mtl="#kitchenm"
                             scale="2.75 2.75 2.75"
                             rotation="0 180 0"
-                            position="17.25 0.5 -5">
+                            position="17.25 0 -5">
                         </a-obj-model>
 
                         <a-obj-model
+                            id="idfridge"
                             src="#fridge"
-                            mtl="#fridgem2"
+                            mtl="#fridgem"
                             scale="0.05 0.05 0.05"
-                            rotation="0 0 0"
+                            rotation="0 270 0"
                             position="18.75 0.5 4.5">
                         </a-obj-model>
 
@@ -392,13 +433,14 @@
                             rotation="0 0 0"
                             position="14 0.5 7.5">
                         </a-obj-model>
-
-
-
         
-        <a-camera position="0 5 0">
-            <a-cursor color="red"/>
-        </a-camera>
+                <!-- lights -->
+
+
+             <!-- camera -->
+                <a-camera position="0 5 0">
+                    <a-cursor color="red"/>
+                </a-camera>
 
         </a-scene>
 
