@@ -18,6 +18,7 @@
                 <img id="whitetile" src="images/whitetile1.jpg"/>
                 <img id="concretetile" src="images/concretetile.jpg"/>
                 <img id="maroonwall" src="images/maroonwall.jpg"/>
+                <img id="metal" src="images/metal.jpg"/>
 
                 <a-asset-item id="stool1" src="models/swivel-bar-stool.obj"/>
                 <a-asset-item id="stoolm" src="models/swivel-bar-stool.mtl"/>
@@ -28,8 +29,12 @@
                 <a-asset-item id="sofa" src="models/sofa/modern-convertible-sofa-with-pullout-bed.obj"/>
                 <a-asset-item id="sofam" src="models/sofa/modern-convertible-sofa-with-pullout-bed.mtl"/>
 
-                <a-asset-item id="kitchen" src="models/kitchen-obj/kitchen.obj"/>
-                <a-asset-item id="kitchenm" src="models/kitchen-obj/kitchen.mtl"/>
+                <a-asset-item id="kitchen" src="models/kitchen/kitchen.obj"/>
+                <a-asset-item id="kitchenm" src="models/kitchen/kitchen.mtl"/>
+                
+                <a-asset-item id="fridge" src="models/fridge/3d-model.obj"/>
+                <a-asset-item id="fridgem2" src="models/fridge/3d-model.mtl"/>
+
 
                 <a-asset-item id="dintable" src="models/dintable/tableAndChair.obj"/>
                 <a-asset-item id="dintablem" src="models/dintable/tableAndChair.mtl"/>
@@ -74,12 +79,32 @@
 
                     <!-- back wall -->
                     <a-box
-                        width="40"
+                        width="20"
                         height="15"
                         depth="0.5"
                         position="0 0 -10"
-                        repeat="10 10"
+                        repeat="4 3"
                         src="#maroonwall">
+                    </a-box>
+
+                    <!-- back wall (kitchen) -->
+                    <a-box
+                        width="10"
+                        height="15"
+                        depth="0.5"
+                        position="15 0 -10"
+                        repeat="7 5"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!-- back wall (room) -->
+                    <a-box
+                        width="10"
+                        height="15"
+                        depth="0.5"
+                        position="-15 0 -10"
+                        repeat="7 5"
+                        src="#whitestucco">
                     </a-box>
 
                     <!-- front wall -->
@@ -145,196 +170,233 @@
                     </a-box>
 
 
-                <!-- counters -->
-
+                <!-- counters and isles -->
                     <!--uppercounter -->
-                    <a-box
-                        width="1"
-                        height="0.25"
-                        depth="15"
-                        position="9.75 3 -2.5"
-                        repeat="1 10"
-                        src="#blacktile">
-                    </a-box>
+                        <a-box
+                            width="1"
+                            height="0.25"
+                            depth="15"
+                            position="9.75 3 -2.5"
+                            repeat="1 10"
+                            src="#blacktile">
+                        </a-box>
 
-                    <!--right wall -->
-                    <a-box
-                        width="1"
-                        height="0.25"
-                        depth="15"
-                        position="10.75 2.5 -2.5"
-                        repeat="1 10"
-                        src="#blacktile">
-                    </a-box>
+                    <!-- lower counter -->
+                        <a-box
+                            width="1"
+                            height="0.25"
+                            depth="15"
+                            position="10.75 2.5 -2.5"
+                            repeat="1 10"
+                            src="#blacktile">
+                        </a-box>
+
+                    <!--back isle -->
+                        <a-box
+                            width="1"
+                            height="3.5"
+                            depth="2"
+                            position="14.5 0.5 -4"
+                            repeat="1 1"
+                            src="#whitestucco">
+                        </a-box>
+
+                        <a-box
+                            width="2"
+                            height="0.25"
+                            depth="3"
+                            position="14.5 2.5 -4"
+                            repeat="2 3"
+                            src="#blacktile">
+                        </a-box>
+
+                    <!-- front isle -->
+                        <a-box
+                            width="1"
+                            height="3.5"
+                            depth="2"
+                            position="14.5 0.5 1"
+                            repeat="1 3"
+                            src="#whitestucco">
+                        </a-box>
+
+                        <a-box
+                            width="2"
+                            height="0.25"
+                            depth="3"
+                            position="14.5 2.5 1"
+                            repeat="2 4"
+                            src="#blacktile">
+                        </a-box>
 
                 <!-- objects -->
-                
-                <!-- stools -->
-                    <a-obj-model
-                        src="#stool1"
-                        mtl="#stoolm"
-                        scale="4 4 4"
-                        position="9 0.75 -8">
-                    </a-obj-model>
 
-                    <a-obj-model
-                        src="#stool1"
-                        mtl="#stoolm"
-                        scale="4 4 4"
-                        position="9 0.75 -6">
-                    </a-obj-model>
+                    <!-- stools -->
+                        <a-obj-model
+                            src="#stool1"
+                            mtl="#stoolm"
+                            scale="4 4 4"
+                            position="9 0.75 -8">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#stool1"
-                        mtl="#stoolm"
-                        scale="4 4 4"
-                        position="9 0.75 -4">
-                    </a-obj-model>
+                        <a-obj-model
+                            src="#stool1"
+                            mtl="#stoolm"
+                            scale="4 4 4"
+                            position="9 0.75 -6">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#stool1"
-                        mtl="#stoolm"
-                        scale="4 4 4"
-                        position="9 0.75 -2">
-                    </a-obj-model>
+                        <a-obj-model
+                            src="#stool1"
+                            mtl="#stoolm"
+                            scale="4 4 4"
+                            position="9 0.75 -4">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#stool1"
-                        mtl="#stoolm"
-                        scale="4 4 4"
-                        position="9 0.75 0">
-                    </a-obj-model>
+                        <a-obj-model
+                            src="#stool1"
+                            mtl="#stoolm"
+                            scale="4 4 4"
+                            position="9 0.75 -2">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#stool1"
-                        mtl="#stoolm"
-                        scale="4 4 4"
-                        position="9 0.75 2">
-                    </a-obj-model>
+                        <a-obj-model
+                            src="#stool1"
+                            mtl="#stoolm"
+                            scale="4 4 4"
+                            position="9 0.75 0">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#stool1"
-                        mtl="#stoolm"
-                        scale="4 4 4"
-                        position="9 0.75 4">
-                    </a-obj-model>
+                        <a-obj-model
+                            src="#stool1"
+                            mtl="#stoolm"
+                            scale="4 4 4"
+                            position="9 0.75 2">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#stool1"
-                        mtl="#stoolm"
-                        scale="4 4 4"
-                        position="11.5 0.5 -8">
-                    </a-obj-model>
+                        <a-obj-model
+                            src="#stool1"
+                            mtl="#stoolm"
+                            scale="4 4 4"
+                            position="9 0.75 4">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#stool1"
-                        mtl="#stoolm"
-                        scale="4 4 4"
-                        position="11.5 0.5 -6">
-                    </a-obj-model>
+                        <a-obj-model
+                            src="#stool1"
+                            mtl="#stoolm"
+                            scale="4 4 4"
+                            position="11.5 0.5 -8">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#stool1"
-                        mtl="#stoolm"
-                        scale="4 4 4"
-                        position="11.5 0.5 -4">
-                    </a-obj-model>
+                        <a-obj-model
+                            src="#stool1"
+                            mtl="#stoolm"
+                            scale="4 4 4"
+                            position="11.5 0.5 -6">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#stool1"
-                        mtl="#stoolm"
-                        scale="4 4 4"
-                        position="11.5 0.5 -2">
-                    </a-obj-model>
+                        <a-obj-model
+                            src="#stool1"
+                            mtl="#stoolm"
+                            scale="4 4 4"
+                            position="11.5 0.5 -4">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#stool1"
-                        mtl="#stoolm"
-                        scale="4 4 4"
-                        position="11.5 0.5 0">
-                    </a-obj-model>
+                        <a-obj-model
+                            src="#stool1"
+                            mtl="#stoolm"
+                            scale="4 4 4"
+                            position="11.5 0.5 -2">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#stool1"
-                        mtl="#stoolm"
-                        scale="4 4 4"
-                        position="11.5 0.5 2">
-                    </a-obj-model>
+                        <a-obj-model
+                            src="#stool1"
+                            mtl="#stoolm"
+                            scale="4 4 4"
+                            position="11.5 0.5 0">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#stool1"
-                        mtl="#stoolm"
-                        scale="4 4 4"
-                        position="11.5 0.5 4">
-                    </a-obj-model>
+                        <a-obj-model
+                            src="#stool1"
+                            mtl="#stoolm"
+                            scale="4 4 4"
+                            position="11.5 0.5 2">
+                        </a-obj-model>
 
-                <!-- tv -->
+                        <a-obj-model
+                            src="#stool1"
+                            mtl="#stoolm"
+                            scale="4 4 4"
+                            position="11.5 0.5 4">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#tv"
-                        mtl="#tvm"
-                        scale="1 1 1"
-                        position="0 2 -9.25">
-                    </a-obj-model>
+                    <!-- tv -->
 
-                <!-- sofas -->
+                        <a-obj-model
+                            src="#tv"
+                            mtl="#tvm"
+                            scale="1 1 1"
+                            position="0 2 -9.25">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#sofa"
-                        mtl="#sofam"
-                        scale="1 1 1"
-                        position="0 0.75 2"
-                        rotation="0 180 0">
-                    </a-obj-model>
+                    <!-- sofas -->
 
-                    <a-obj-model
-                        src="#sofa"
-                        mtl="#sofam"
-                        scale="1 1 1"
-                        position="4 0.75 -2"
-                        rotation="0 270 0">
-                    </a-obj-model>
+                        <a-obj-model
+                            src="#sofa"
+                            mtl="#sofam"
+                            scale="1 1 1"
+                            position="0 0.75 2"
+                            rotation="0 180 0">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#sofa"
-                        mtl="#sofam"
-                        scale="1 1 1"
-                        position="-4 0.75 -2"
-                        rotation="0 90 0">
-                    </a-obj-model>
+                        <a-obj-model
+                            src="#sofa"
+                            mtl="#sofam"
+                            scale="1 1 1"
+                            position="4 0.75 -2"
+                            rotation="0 270 0">
+                        </a-obj-model>
 
-                <!-- kitchens -->
+                        <a-obj-model
+                            src="#sofa"
+                            mtl="#sofam"
+                            scale="1 1 1"
+                            position="-4 0.75 -2"
+                            rotation="0 90 0">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#kitchen"
-                        mtl="#kitchenm"
-                        scale="0.25 0.25 0.25"
-                        rotation="0 270 0"
-                        position="18.5 0.5 -5.25">
-                    </a-obj-model>
+                    <!-- kitchens -->
 
-                    <a-obj-model
-                        src="#kitchen"
-                        mtl="#kitchenm"
-                        scale="0.25 0.25 0.25"
-                        rotation="0 270 0"
-                        position="18.5 0.5 1.25">
-                    </a-obj-model>
+                        <a-obj-model
+                            src="#kitchen"
+                            mtl="#kitchenm"
+                            scale="2.75 2.75 2.75"
+                            rotation="0 180 0"
+                            position="17.25 0.5 -5">
+                        </a-obj-model>
 
-                <!-- dinner table -->
+                        <a-obj-model
+                            src="#fridge"
+                            mtl="#fridgem2"
+                            scale="0.05 0.05 0.05"
+                            rotation="0 0 0"
+                            position="18.75 0.5 4.5">
+                        </a-obj-model>
 
-                    <a-obj-model
-                        src="#dintable"
-                        mtl="#dintablem"
-                        scale="0.60 0.60 0.60"
-                        rotation="0 0 0"
-                        position="14 0.5 7.5">
-                    </a-obj-model>
+                    <!-- dinner table -->
+
+                        <a-obj-model
+                            src="#dintable"
+                            mtl="#dintablem"
+                            scale="0.60 0.60 0.60"
+                            rotation="0 0 0"
+                            position="14 0.5 7.5">
+                        </a-obj-model>
 
 
 
         
-        <a-camera position="0 7 0">
+        <a-camera position="0 5 0">
             <a-cursor color="red"/>
         </a-camera>
 
