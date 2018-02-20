@@ -1,6 +1,6 @@
 Project 1: Dream House Report
 
-Video: 
+Video: https://www.youtube.com/watch?v=0J7VG_lUvVg
 
 Virtual House: https://lvrg12.github.io/dreamHouse/
 
