@@ -17,10 +17,29 @@
                 <img id="whitestucco" src="images/whitestucco.jpg"/>
                 <img id="whitetile" src="images/whitetile1.jpg"/>
                 <img id="concretetile" src="images/concretetile.jpg"/>
+                <img id="blackwood" src="images/blackwood.jpg"/>
                 <img id="maroonwall" src="images/maroonwall.jpg"/>
                 <img id="metal" src="images/metal.jpg"/>
                 <img id="carpet" src="images/carpet.jpg"/>
+                <img id="mexico" src="images/mexico.jpg"/>
 
+                <a-asset-item id="switch" src="models/lightSwitch.obj"/>
+
+                <a-asset-item id="strip" src="models/strip/fluorescent-strip.obj"/>
+                <a-asset-item id="stripm" src="models/strip/fluorescent-strip.mtl"/>
+                
+                <a-asset-item id="frontdoor" src="models/frontdoor/fancyFrontDoor.obj"/>
+                <a-asset-item id="frontdoorm" src="models/frontdoor/fancyFrontDoor.mtl"/>
+
+                <a-asset-item id="door" src="models/door/puerta.obj"/>
+                <a-asset-item id="doorm" src="models/door/puerta.mtl"/>
+
+                <a-asset-item id="lights" src="models/lamp/ceiling_lamp_globo_feria.obj"/>
+                <a-asset-item id="lightsm" src="models/lamp/ceiling_lamp_globo_feria.mtl"/>
+
+                <a-asset-item id="fan" src="models/fan/ceilingFan.obj"/>
+                <a-asset-item id="fanm" src="models/fan/ceilingFan.mtl"/>
+                
                 <a-asset-item id="stool" src="models/stool/Bar_chair.obj"/>
                 <a-asset-item id="stoolm" src="models/stool/Bar_chair.mtl"/>
 
@@ -57,13 +76,16 @@
                 <a-asset-item id="piano" src="models/piano/piano.obj"/>
                 <a-asset-item id="pianom" src="models/piano/piano.mtl"/>
 
+                <a-asset-item id="bookcase" src="models/bookcase/bookcase.obj"/>
+                <a-asset-item id="bookcasem" src="models/bookcase/bookcase.mtl"/>
+
             </a-assets>
 
             <!-- outside -->
 
             <!-- inside -->
 
-                <!-- inner foundation -->
+                <!-- inner foundation and ceiling -->
                     <a-box
                         width="40"
                         height="0.5"
@@ -71,6 +93,15 @@
                         position="0 0 0"
                         repeat="10 5"
                         src="#concretetile">
+                    </a-box>
+
+                    <a-box
+                        width="40"
+                        height="0.5"
+                        depth="20"
+                        position="0 7.5 0"
+                        repeat="10 5"
+                        src="#blackwood">
                     </a-box>
 
                 <!-- outer walls -->
@@ -145,9 +176,9 @@
                         src="#concretetile">
                     </a-box>
 
-                <!--inner walls and columns -->
+                <!-- inner walls and columns -->
 
-                    <!--left wall -->
+                    <!-- left wall -->
                     <a-box
                         width="0.5"
                         height="15"
@@ -157,7 +188,7 @@
                         src="#whitestucco">
                     </a-box>
 
-                    <!--right wall -->
+                    <!-- right wall -->
                     <a-box
                         width="0.5"
                         height="6"
@@ -167,7 +198,17 @@
                         src="#whitestucco">
                     </a-box>
 
-                    <!--left column -->
+                    <!-- front wall (room) -->
+                    <a-box
+                        width="10.5"
+                        height="15"
+                        depth="0.5"
+                        position="-15 0 5"
+                        repeat="7 5"
+                        src="#whitestucco">
+                    </a-box>
+
+                    <!-- left column -->
                     <a-box
                         width="0.5"
                         height="15"
@@ -248,6 +289,88 @@
                         </a-box>
 
                 <!-- objects -->
+                    
+                    <!-- doors -->
+                        <a-obj-model
+                            src="#frontdoor"
+                            mtl="#frontdoorm"
+                            scale="0.5 0.5 0.5"
+                            rotation="0 0 0"
+                            position="-15 1.5 9.75">
+                        </a-obj-model>
+
+                        <a-obj-model
+                            src="#frontdoor"
+                            mtl="#frontdoorm"
+                            scale="0.5 0.5 0.5"
+                            rotation="0 180 0"
+                            position="-0.3 1.5 9.60">
+                        </a-obj-model>
+
+                    <!-- light sources -->
+
+                        <a-obj-model
+                            src="#switch"
+                            scale="0.1 0.1 0.1"
+                            rotation="0 180 0"
+                            position="-4.5 3 9.75">
+                        </a-obj-model>
+
+                        <a-obj-model
+                            src="#strip"
+                            mtl="#stripm"
+                            scale="0.15 0.15 0.15"
+                            rotation="0 180 0"
+                            position="-4.5 3.40 9.75">
+                        </a-obj-model>
+                        
+                        <a-obj-model
+                            src="#fan"
+                            mtl="#fanm"
+                            scale="0.03 0.03 0.03"
+                            rotation="0 0 0"
+                            position="13 6 5">
+                        </a-obj-model>
+
+                        <a-obj-model
+                            src="#fan"
+                            mtl="#fanm"
+                            scale="0.03 0.03 0.03"
+                            rotation="0 0 0"
+                            position="13 6 -5">
+                        </a-obj-model>
+
+                        <a-obj-model
+                            src="#lights"
+                            mtl="#lightsm"
+                            scale="0.02 0.02 0.02"
+                            rotation="0 0 0"
+                            position="-5 7 -5">
+                        </a-obj-model>
+
+                        <a-obj-model
+                            src="#lights"
+                            mtl="#lightsm"
+                            scale="0.02 0.02 0.02"
+                            rotation="0 0 0"
+                            position="5 7 -5">
+                        </a-obj-model>
+
+                        <a-obj-model
+                            src="#lights"
+                            mtl="#lightsm"
+                            scale="0.02 0.02 0.02"
+                            rotation="0 0 0"
+                            position="-5 7 5">
+                        </a-obj-model>
+
+                        <a-obj-model
+                            src="#lights"
+                            mtl="#lightsm"
+                            scale="0.02 0.02 0.02"
+                            rotation="0 0 0"
+                            position="5 7 5">
+                        </a-obj-model>
 
                     <!-- stools -->
                         <a-obj-model
@@ -430,6 +553,15 @@
                             src="#carpet">
                         </a-plane>
 
+                    <!-- flag -->
+                        <a-plane
+                            width="5.5"
+                            height="3.5"
+                            position="-9.49 5 -2"
+                            rotation="0 90 0"
+                            src="#mexico">
+                        </a-plane>
+
                     <!-- kitchen -->
 
                         <a-obj-model
@@ -445,15 +577,15 @@
                             mtl="#fridgem"
                             scale="0.035 0.035 0.025"
                             rotation="0 270 0"
-                            position="21.5 0 -16.5">
+                            position="21.5 0 -13.5">
                         </a-obj-model>
 
                         <a-obj-model
                             src="#pan"
                             mtl="#panm"
                             scale="0.025 0.025 0.025"
-                            rotation="0 0 0"
-                            position="23.8 0.49 -3.4">
+                            rotation="0 90 0"
+                            position="14 0.5 -8">
                         </a-obj-model>
 
 
@@ -476,12 +608,53 @@
                             rotation="0 180 0"
                             position="1.5 2 9">
                         </a-obj-model>
+
+                    <!-- bookcase -->
+
+                        <a-obj-model
+                            src="#bookcase"
+                            mtl="#bookcasem"
+                            scale="0.025 0.025 0.025"
+                            rotation="0 0 0"
+                            position="-13 3.25 15.5">
+                        </a-obj-model>
         
                 <!-- lights -->
 
+                        <a-light
+                                type="point"
+                                intensity="0.5"
+                                distance="2"
+                                position="-4.5 3.5 9">
+                        </a-light>
+
+                        <a-light
+                                type="point"
+                                intensity="0.2"
+                                position="5 7 5">
+                        </a-light>
+
+                        <a-light
+                                type="point"
+                                intensity="0.2"
+                                position="-5 7 5">
+                        </a-light>
+                
+                
+                        <a-light
+                                type="ambient"
+                                intensity="0.2"
+                                position="5 7 5">
+                        </a-light>
+
+                        <a-light
+                                type="ambient"
+                                intensity="0.2"
+                                position="-5 7 -5">
+                        </a-light>
 
              <!-- camera -->
-                <a-camera position="0 2 0">
+                <a-camera position="0 3 0">
                     <a-cursor color="red"/>
                 </a-camera>
 
