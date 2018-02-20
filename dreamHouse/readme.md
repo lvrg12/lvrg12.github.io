@@ -1,10 +1,8 @@
-Lino Virgen
-CS 5331
-
 Project 1: Dream House Report
 
-Virtual House: lvrg12.github.io/dreamHouse/
 Video: 
+
+Virtual House: lvrg12.github.io/dreamHouse/
 
 The goal of this project was to design and create our dream house utilizing the current virtual
 reality development tools. In this case I implemented my project with html, javascript, Three.JS,
@@ -59,3 +57,11 @@ of both types of lights.
 It is important to mention that a user is able to walk through the room with no complication. This
 gives an actual sense of virtual reality. Also, by utilizing the many resources of A-Frame, I was able
 to design and virtually create a large environment. Feel free to inspect it using the links above.
+
+Resources used:
+https://aframe.io/
+http://www.sweethome3d.com/freeModels.jsp
+https://free3d.com/free-3d-models/
+https://clara.io/
+https://grabcad.com/
+https://www.cgtrader.com/
