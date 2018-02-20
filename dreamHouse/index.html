@@ -37,8 +37,8 @@
                 <a-asset-item id="lights" src="models/lamp/ceiling_lamp_globo_feria.obj"/>
                 <a-asset-item id="lightsm" src="models/lamp/ceiling_lamp_globo_feria.mtl"/>
 
-                <a-asset-item id="fan" src="models/fan/ceilingFan.obj"/>
-                <a-asset-item id="fanm" src="models/fan/ceilingFan.mtl"/>
+                <a-asset-item id="fan" src="models/fan/fans.obj"/>
+                <a-asset-item id="fanm" src="models/fan/fans.mtl"/>
                 
                 <a-asset-item id="stool" src="models/stool/Bar_chair.obj"/>
                 <a-asset-item id="stoolm" src="models/stool/Bar_chair.mtl"/>
@@ -78,6 +78,8 @@
 
                 <a-asset-item id="bookcase" src="models/bookcase/bookcase.obj"/>
                 <a-asset-item id="bookcasem" src="models/bookcase/bookcase.mtl"/>
+
+                <a-asset-item id="song" src="media/piano.wav"/>
 
             </a-assets>
 
@@ -314,6 +316,10 @@
                             scale="0.1 0.1 0.1"
                             rotation="0 180 0"
                             position="-4.5 3 9.75">
+                            <a-event
+                                name="mouseenter"
+                                emit="turnon">
+                            </a-event>
                         </a-obj-model>
 
                         <a-obj-model
@@ -327,17 +333,29 @@
                         <a-obj-model
                             src="#fan"
                             mtl="#fanm"
-                            scale="0.03 0.03 0.03"
+                            scale="1 1 1"
                             rotation="0 0 0"
                             position="13 6 5">
+                                <a-animation
+                                        attribute="rotation"
+                                        repeat="indefinite"
+                                        easing="linear"
+                                        to="0 360 0">
+                                </a-animation>
                         </a-obj-model>
 
                         <a-obj-model
                             src="#fan"
                             mtl="#fanm"
-                            scale="0.03 0.03 0.03"
+                            scale="1 1 1"
                             rotation="0 0 0"
                             position="13 6 -5">
+                                <a-animation
+                                        attribute="rotation"
+                                        repeat="indefinite"
+                                        easing="linear"
+                                        to="0 360 0">
+                                </a-animation>
                         </a-obj-model>
 
                         <a-obj-model
@@ -602,12 +620,23 @@
                     <!-- piano -->
 
                         <a-obj-model
+                            id="idpiano"
                             src="#piano"
                             mtl="#pianom"
                             scale="0.027 0.027 0.027"
                             rotation="0 180 0"
                             position="1.5 2 9">
                         </a-obj-model>
+
+                        <a-box
+                            material="color:tomato;transparent:true;opacity:0"
+                            depth="2"
+                            height="5.5"
+                            width="5"
+                            sound="src: url(media/piano.wav); on: click"
+                            class="intersectable"
+                            position="1.5 1 9">
+                        </a-box>
 
                     <!-- bookcase -->
 
@@ -621,44 +650,53 @@
         
                 <!-- lights -->
 
-                        <a-light
-                                type="point"
-                                intensity="0.5"
-                                distance="2"
-                                position="-4.5 3.5 9">
-                        </a-light>
+                    <a-light
+                            id="idlight1"
+                            type="point"
+                            intensity="0.5"
+                            distance="2"
+                            position="-4.5 3.5 9">
+                                <a-animation
+                                    attribute="intensity"
+                                    begin="turnon"
+                                    to="10">
+                                </a-animation>
+                    </a-light>
 
-                        <a-light
-                                type="point"
-                                intensity="0.2"
-                                position="5 7 5">
-                        </a-light>
+                    <a-light
+                            type="point"
+                            intensity="0.2"
+                            position="5 7 5">
+                    </a-light>
 
-                        <a-light
-                                type="point"
-                                intensity="0.2"
-                                position="-5 7 5">
-                        </a-light>
-                
-                
-                        <a-light
-                                type="ambient"
-                                intensity="0.2"
-                                position="5 7 5">
-                        </a-light>
+                    <a-light
+                            type="point"
+                            intensity="0.2"
+                            position="-5 7 5">
+                    </a-light>
+            
+            
+                    <a-light
+                            type="ambient"
+                            intensity="0.3"
+                            position="5 7 5">
+                    </a-light>
 
-                        <a-light
-                                type="ambient"
-                                intensity="0.2"
-                                position="-5 7 -5">
-                        </a-light>
+                    <a-light
+                            type="ambient"
+                            intensity="0.3"
+                            position="-5 7 -5">
+                    </a-light>
 
              <!-- camera -->
-                <a-camera position="0 3 0">
-                    <a-cursor color="red"/>
-                </a-camera>
+                <a-entity position="0 2 -2">
+                    <a-camera universal-controls>
+                        <a-entity raycaster="far: 150; objects: .intersectable" cursor geometry="primitive: ring; radiusOuter: 0.015;
+                                        radiusInner: 0.01; segmentsTheta: 32" material="color: #283644; shader: flat" position="0 0 -0.75"></a-entity>
+                    </a-camera>
+                </a-entity>
 
         </a-scene>
 
-    </body>    
+    </body>
 </html>
