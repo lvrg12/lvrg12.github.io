@@ -2,7 +2,7 @@ Project 1: Dream House Report
 
 Video: 
 
-Virtual House: lvrg12.github.io/dreamHouse/
+Virtual House: https://lvrg12.github.io/dreamHouse/
 
 The goal of this project was to design and create our dream house utilizing the current virtual
 reality development tools. In this case I implemented my project with html, javascript, Three.JS,
