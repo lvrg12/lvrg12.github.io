@@ -30,10 +30,11 @@ objects in the living room are downloaded models.
 ![alt text](https://github.com/lvrg12/lvrg12.github.io/blob/master/dreamHouse/screenshots/livingroom.png)
 
 I continued with the double counter and the kitchen. I believe this counter to be the most important
-part of the house. I kept the black tiles just as it was in real life and I added modern bar stools
-in both sides. The cabinets of the kitchen are all in one model. The fridge and the large pan
-are single models which I scrupulously placed around the kitchen. Also at the very front of the
-kitchen there is the dining table which as well has a modern style.
+part of the house. I utilized the black tiles and I added modern bar stools in both sides. The
+cabinets of the kitchen are all in one model. The fridge and the large pan
+are single models which I scrupulously placed around the kitchen. If the pan is clicked it is moved to
+the top of the stove. Also at the very front of the kitchen there is the dining table which as well has
+a modern style.
 
 ![alt text](https://github.com/lvrg12/lvrg12.github.io/blob/master/dreamHouse/screenshots/kitchen.png)
 
@@ -57,6 +58,32 @@ of both types of lights.
 It is important to mention that a user is able to walk through the room with no complication. This
 gives an actual sense of virtual reality. Also, by utilizing the many resources of A-Frame, I was able
 to design and virtually create a large environment. Feel free to inspect it using the links above.
+
+In total there were 22 models used. 18 were downloaded and 4 models were created by me. The following
+is a list of all the models:
+
+*Switch
+*Fluorescent Strip
+*Front Door
+*Inside door
+*Ceiling lamp
+*Stool
+*TV
+*TV Stand
+*Sofa
+*Coffee Table
+*Entrance Table
+*Kitchen Cabinets
+*Fridge
+*Large Pan
+*Plates
+*Dinner Table
+*Piano
+*Bookcase
+*Carpet
+*Flag
+*Kitchen Island
+*Counter
 
 Resources used:
 https://aframe.io/
