@@ -86,9 +86,9 @@ is a list of all the models:
 * Counter
 
 Resources used:
-https://aframe.io/
-http://www.sweethome3d.com/freeModels.jsp
-https://free3d.com/free-3d-models/
-https://clara.io/
-https://grabcad.com/
-https://www.cgtrader.com/
+* https://aframe.io/
+* http://www.sweethome3d.com/freeModels.jsp
+* https://free3d.com/free-3d-models/
+* https://clara.io/
+* https://grabcad.com/
+* https://www.cgtrader.com/
