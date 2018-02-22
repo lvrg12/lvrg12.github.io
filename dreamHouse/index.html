@@ -310,6 +310,22 @@
                             position="-0.3 1.5 9.60">
                         </a-obj-model>
 
+                        <a-obj-model
+                            src="#door"
+                            mtl="#doorm"
+                            scale="0.02 0.02 0.02"
+                            rotation="0 0 0"
+                            position="-11 0.25 5.90">
+                        </a-obj-model>
+
+                        <a-obj-model
+                            src="#door"
+                            mtl="#doorm"
+                            scale="0.02 0.02 0.02"
+                            rotation="0 90 0"
+                            position="20.25 0.25 1.5">
+                        </a-obj-model>
+
                     <!-- light sources -->
 
                         <a-obj-model
@@ -355,7 +371,7 @@
                                         to="0 360 0">
                                 </a-animation>
                         </a-obj-model>
-                    -->
+                        -->
                         <a-obj-model
                             src="#lights"
                             mtl="#lightsm"
@@ -602,6 +618,11 @@
                             scale="0.025 0.025 0.025"
                             rotation="0 90 0"
                             position="14 0.5 -8">
+                            <a-animation
+                                    attribute="position"
+                                    begin="click"
+                                    to="18 0.5 -7.25">
+                            </a-animation>
                         </a-obj-model>
 
 
@@ -681,7 +702,7 @@
                     </a-light>
 
              <!-- camera -->
-                <a-entity position="0 5 -2">
+                <a-entity position="0 2 -2">
                     <a-camera universal-controls>
                         <a-entity raycaster="far: 150; objects: .intersectable" cursor geometry="primitive: ring; radiusOuter: 0.015;
                                         radiusInner: 0.01; segmentsTheta: 32" material="color: #283644; shader: flat" position="0 0 -0.75"></a-entity>
