@@ -62,28 +62,28 @@ to design and virtually create a large environment. Feel free to inspect it usin
 In total there were 22 models used. 18 were downloaded and 4 models were created by me. The following
 is a list of all the models:
 
-*Switch
-*Fluorescent Strip
-*Front Door
-*Inside door
-*Ceiling lamp
-*Stool
-*TV
-*TV Stand
-*Sofa
-*Coffee Table
-*Entrance Table
-*Kitchen Cabinets
-*Fridge
-*Large Pan
-*Plates
-*Dinner Table
-*Piano
-*Bookcase
-*Carpet
-*Flag
-*Kitchen Island
-*Counter
+* Switch
+* Fluorescent Strip
+* Front Door
+* Inside door
+* Ceiling lamp
+* Stool
+* TV
+* TV Stand
+* Sofa
+* Coffee Table
+* Entrance Table
+* Kitchen Cabinets
+* Fridge
+* Large Pan
+* Plates
+* Dinner Table
+* Piano
+* Bookcase
+* Carpet
+* Flag
+* Kitchen Island
+* Counter
 
 Resources used:
 https://aframe.io/
